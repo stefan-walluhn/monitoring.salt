@@ -7,7 +7,7 @@ check_system:
     - dataset:
         checks:
           check_disk_usage:
-            command: check-disk-usage.rb -p /export -x tracefs,autofs
+            command: check-disk-usage.rb -p /export -i /srv/backup -x tracefs,autofs
             interval: 120
             subscribers:
               - system
